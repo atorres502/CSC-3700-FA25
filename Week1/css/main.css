@@ -1,0 +1,15 @@
+body {
+    background: lightgrey;
+}
+li {
+    font-size: 14px;
+    color: white;
+}
+
+.big {
+    font-size: 50pt;
+}
+
+#title {
+    color: yellow;
+}
