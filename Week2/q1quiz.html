@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        let myList = [5, 18, 22, 199, 120]
+        /*first function:
+        function getNextNumber(myNumb) {
+            let retNextNum = null;
+            for(let i = 0; i < myList.length; i++) {
+                if(myList[i] === myNumb && myList.length - 1) {
+                    retNextNum = myList[i+1];
+                }
+            }
+            alert(`Next Number: ${retNextNum}`);
+        }*/
+        function getNextNumber(myNumb) {
+            let retNextNum = null;
+            let item = myList.indexOf(myNumb);
+            if(item === -1 || item === myList.length-1) {
+                return null;
+            }
+            alert(`Next Number: ${myList[item+1]}`);
+            return myList[item+1];
+        }
+
+    </script>
+</head>
+<body>
+    <button name="button1" onClick="getNextNumber( 22)">Click</button>
+</body>
+</html>

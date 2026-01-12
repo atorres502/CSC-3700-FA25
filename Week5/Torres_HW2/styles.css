@@ -1,0 +1,17 @@
+.movieTableHead{
+    background: #000;
+}
+.grey-header{
+    background: #505050;
+}
+.blue-header{
+    background: #3498db;
+}
+.green-header{
+    background: #4CAF50;
+}
+.error-message{
+    color: red;
+    font-size: 0.9em;
+    margin-top: 4px;
+}

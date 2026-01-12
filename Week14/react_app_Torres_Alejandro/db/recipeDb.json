@@ -1,0 +1,58 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "title": "Spaghetti Carbonara",
+      "timeMinutes": 25,
+      "difficulty": "Medium",
+      "desc": "Traditional Italian pasta dish.",
+      "ingredients": [
+        { "name": "eggs",      "quantity": 4,   "unit": "pcs" },
+        { "name": "pancetta",  "quantity": 6,   "unit": "oz" },
+        { "name": "parmesan",  "quantity": 0.5, "unit": "cup" },
+        { "name": "spaghetti", "quantity": 12,  "unit": "oz" }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Veggie Stir-Fry",
+      "timeMinutes": 20,
+      "difficulty": "Easy",
+      "desc": "Quick and healthy weeknight dinner.",
+      "ingredients": [
+        { "name": "broccoli florets", "quantity": 2, "unit": "cups" },
+        { "name": "carrots",          "quantity": 2, "unit": "pcs" },
+        { "name": "soy sauce",        "quantity": 3, "unit": "tbsp" },
+        { "name": "ginger",           "quantity": 1, "unit": "tbsp" }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Chicken Tikka Masala",
+      "timeMinutes": 45,
+      "difficulty": "Hard",
+      "desc": "Rich and flavorful Indian curry dish.",
+      "ingredients": [
+        { "name": "chicken thighs",   "quantity": 1.5, "unit": "lb" },
+        { "name": "yogurt",          "quantity": 1,   "unit": "cup" },
+        { "name": "garam masala",    "quantity": 2,   "unit": "tbsp" },
+        { "name": "tomato puree",    "quantity": 1,   "unit": "cup" },
+        { "name": "heavy cream",     "quantity": 0.5, "unit": "cup" }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Fettucine Alfredo",
+      "timeMinutes": 30,
+      "difficulty": "Easy",
+      "desc": "Cheesy good dish",
+      "ingredients": [
+        { "name": "chicken breast",   "quantity": 1.5, "unit": "lb" },
+        { "name": "parmesan",          "quantity": 1,   "unit": "cup" },
+        { "name": "heavy whipping cream",    "quantity": 2,   "unit": "tbsp" },
+        { "name": "garlic",    "quantity": 1,   "unit": "cup" },
+        { "name": "fettucine",     "quantity": 0.5, "unit": "cup" }
+      ]
+    }
+  ]
+}

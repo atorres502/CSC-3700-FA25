@@ -1,0 +1,12 @@
+<h2>Books</h2>
+<p><a href="/books/new">+ Add Book</a></p>
+
+{{#if books.length}}
+    <ul>
+        {{#each books}}
+            <li><strong>{{title}}</strong> by {{author}} {{#if isbn}}(ISBN: {{isbn}}){{/if}}</li>
+        {{/each}}
+    </ul>
+{{else}}
+    <p>No books yet.</p>
+{{/if}}

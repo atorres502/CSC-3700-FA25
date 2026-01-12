@@ -1,0 +1,122 @@
+{
+  "donuts" : [
+    {
+      "id": 1,
+      "name": "Glazed Classic",
+      "price": 1.25,
+      "description": "A soft yeast donut with a sweet sugar glaze.",
+      "toppings": [
+        "sugar glaze"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Chocolate Frosted",
+      "price": 1.50,
+      "description": "Yeast donut topped with rich chocolate icing.",
+      "toppings": [
+        "chocolate icing"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Strawberry Sprinkles",
+      "price": 1.75,
+      "description": "Frosted with strawberry icing and rainbow sprinkles.",
+      "toppings": [
+        "strawberry icing",
+        "rainbow sprinkles"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Boston Cream",
+      "price": 2.00,
+      "description": "Filled with vanilla custard and topped with chocolate glaze.",
+      "toppings": [
+        "chocolate glaze",
+        "custard filling"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Jelly Filled",
+      "price": 1.85,
+      "description": "Powdered donut filled with sweet raspberry jelly.",
+      "toppings": [
+        "powdered sugar",
+        "raspberry jelly"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Cinnmon Sugar",
+      "price": 1.40,
+      "description": "Coated with a blend of cinnamon and sugar.",
+      "toppings": [
+        "cinnamon",
+        "sugar"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Maple Bar",
+      "price": 2.25,
+      "description": "Long bar donut topped with maple icing.",
+      "toppings": [
+        "maple icing"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Oreo Crumble",
+      "price": 2.50,
+      "description": "Vanilla-frosted donut with crushed Oreo cookies.",
+      "toppings": [
+        "vanilla icing",
+        "Oreo pieces"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Peanut Butter Crunch",
+      "price": 2.35,
+      "description": "Chocolate donut with peanut butter glaze and crunchy topping.",
+      "toppings": [
+        "peanut butter glaze",
+        "crunchy peanuts"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Apple Fritter",
+      "price": 2.75,
+      "description": "Crispy fried dough with apple chunks and cinnamon glaze.",
+      "toppings": [
+        "apple filling",
+        "cinnamon glaze"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Coconut Cream",
+      "price": 2.10,
+      "description": "Cream-filled donut topped with coconut shavings.",
+      "toppings": [
+        "coconut shavings",
+        "vanilla cream"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "S’mores Delight",
+      "price": 2.80,
+      "description": "Chocolate donut with marshmallow drizzle and graham cracker crumbs.",
+      "toppings": [
+        "marshmallow drizzle",
+        "graham cracker crumbs",
+        "chocolate glaze"
+      ]
+    }
+  ]
+}

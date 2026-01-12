@@ -1,0 +1,30 @@
+<h2>Add Book</h2>
+
+{{#if errors}}
+    <div class="alert">
+        <ul>
+            {{#each errors}} <li>{{this}}</li> {{/each}}
+        </ul>
+    </div>
+{{/if}}
+
+<form method="POST" action="/books" class="form">
+    <label>Title
+<!--        <input name="title" value="{{values.title}}" required>-->
+        <input name="title" value="{{values.title}}" >
+    </label>
+
+    <label>Author
+<!--        <input name="author" value="{{values.author}}" required>-->
+        <input name="author" value="{{values.author}}" >
+    </label>
+
+    <label>ISBN
+        <input name="isbn" value="{{values.isbn}}">
+    </label>
+
+    <div class="actions">
+        <button type="submit" class="btn primary">Create</button>
+        <a href="/books" class="btn">Cancel</a>
+    </div>
+</form>

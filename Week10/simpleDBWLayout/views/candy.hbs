@@ -1,0 +1,34 @@
+<div class="d-flex align-items-center justify-content-between mb-3">
+    <h1 class="h3 m-0">Candy Inventory</h1>
+</div>
+
+<div class="card shadow-sm">
+    <div class="card-body p-0">
+        <div class="table-responsive">
+            <table class="table table-striped table-hover align-middle m-0">
+                <thead class="table-light">
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Item</th>
+                    <th scope="col">Count</th>
+                    <th scope="col">Cost</th>
+                    <th scope="col">totalValue (varchar)</th>
+                    <th scope="col">computedTotal</th>
+                </tr>
+                </thead>
+                <tbody>
+                {{#each candies}}
+                    <tr>
+                        <td>{{id}}</td>
+                        <td class="fw-medium">{{item}}</td>
+                        <td>{{count}}</td>
+                        <td>${{cost}}</td>
+                        <td>{{totalValue}}</td>
+                        <td>${{computedTotal}}</td>
+                    </tr>
+                {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<script>
+    //object literal
+    const USER = {
+        name : 'Jack',
+        //for testing the summarizeUser3 function
+        //name : '',
+        age : '22',
+        major : 'CSC',
+        gotMobile : true,
+        grades : ['a', 'b', 'c']
+    }
+    function runCode(){
+        const res  = document.getElementById("results");
+        let resp = summarizeUser4(USER);
+        res.innerHTML = `Resp: ${resp}`;
+    }
+    //destructuring example using specific data from an object literal 'USER'
+    function summarizeUser( {name, gotMobile} ){
+        console.log(`name:${name} gotMobile:${gotMobile}`);
+        let res = `No Mobile for ${name}`;
+        if (gotMobile) {
+            res = "Got Mobile for " + name;
+        }
+        return res;
+    }
+    //named function, does the same as the previous function. Created as it's called. loads faster since its
+    //technically a variable (also called an arrow function)
+    const summarizeUser2 = ( {name, gotMobile} ) => {
+        console.log(`name:${name} gotMobile:${gotMobile}`);
+        let res = `No Mobile for ${name}`;
+        if (gotMobile) {
+            res = "Got Mobile for " + name + " (function 2)";
+        }
+        return res;
+    }
+    //one line function using a ternary operator as well. if name true return name, if name not true pass none
+    //'?' is an operator like '*', '/', '+', or '-'
+    const summarizeUser3 = ( {name, gotMobile} ) => name ? name : 'none';
+    //you can leave off the parentheses from an arrow function if you only have one parameter
+    const summarizeUser4 = name => name ? name : 'none';
+    //another format for an arrow function/named function
+    const doMath = () => 2 + 3;
+</script>
+<body>
+<h2> Basic Template for JS</h2>
+<button id="myButton" class="btn btn-primary" onclick="runCode()">
+    Click to start
+    </button>
+
+<div id="results"> Basic Template for JS</div>
+</body>
+</html>

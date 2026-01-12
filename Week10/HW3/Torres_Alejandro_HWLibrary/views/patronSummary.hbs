@@ -1,0 +1,18 @@
+<h2 class="mb-3">Patron Summary</h2>
+
+<ul class="list-group">
+    <li class="list-group-item d-flex justify-content-between">
+        <span>Total Patrons</span>
+        <span class="badge bg-secondary">{{total}}</span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between">
+        <span>Total Books Checked Out</span>
+        <span class="badge bg-danger">{{totalChecked}}</span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between">
+        <span>Average Books Per Patron</span>
+        <span class="badge bg-info">{{avgPerPatron}}</span>
+    </li>
+</ul>
+
+<a href="/patrons" class="btn btn-primary mt-3">Back to Patrons</a>

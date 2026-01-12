@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f7f7f7;
+}
+
+nav a {
+    margin-right: 12px;
+    text-decoration: none;
+}
+
+ul { padding: 0; }
+li {
+    list-style: none;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: white;
+}
+
+.first { background-color: yellow; }
+.last  { background-color: pink; }
+
+.checkedOut { color: red; font-weight: bold; }
+.available  { color: green; font-weight: bold; }
+
+.summary-card {
+    background: white;
+    padding: 16px;
+    border-radius: 8px;
+    display: inline-block;
+}

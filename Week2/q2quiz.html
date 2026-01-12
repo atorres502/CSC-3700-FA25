@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        let order = [
+            { 'Item Name' : 'Fruit Loops',
+                'Quantity' : 1,
+                'Price' : 5.99
+            },
+            { 'Item Name' : 'Cheerios',
+                'Quantity' : 2,
+                'Price' : 6.99
+            },
+            { 'Item Name' : 'All Bran',
+                'Quantity' : 3,
+                'Price' : 2.99
+            }
+        ];
+        let customer = {
+            'Name' : "Jack Black",
+            'Location' : 'Caribbean',
+            'Distance' : 1200
+        }
+
+        function processOrder() {
+            let itemTotal = 0;
+            for(let i = 0; i <order.length(); i++) {
+                let itemQ = order[i].Quantity;
+                let itemP = order[i].Price;
+                itemTotal += itemQ * itemP;
+            }
+            let delCharge =  30;
+            if(customer.Distance < 200) {
+                delCharge = 10;
+            }
+            else if (customer.Distance <= 500) {
+                delCharge = 20;
+            }
+            itemTotal += delCharge;
+            console.log(`item total = ${itemTotal}`);
+            return itemTotal;
+        }
+    </script>
+</head>
+<body>
+    <button type="button" onClick="processOrder()">Click</button>
+</body>
+</html>

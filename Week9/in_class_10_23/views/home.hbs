@@ -1,0 +1,19 @@
+
+<h1>Library Books</h1>
+<ul>
+    {{#each books}}
+        <li class="
+        {{#if @first}}first{{/if}}
+            {{#if @last}}last{{/if}}
+      ">
+            <strong>{{title}}</strong> by {{author}} —
+            {{#if checkedOut}}
+                <span class="checkedOut">Checked Out</span>
+            {{else}}
+                <span class="available">Available</span>
+            {{/if}}
+        </li>
+    {{/each}}
+</ul>
+</body>
+</html>

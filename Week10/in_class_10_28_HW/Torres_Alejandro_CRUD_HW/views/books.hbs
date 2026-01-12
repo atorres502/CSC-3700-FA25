@@ -1,0 +1,46 @@
+<h1>Books</h1>
+
+<p><a href="/books/new">Add New Book</a></p>
+
+{{#if books.length}}
+    <table>
+        <thead>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>ISBN</th>
+            <th>Pages</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        {{#each books}}
+            <tr>
+                <td><a href="/books/{{id}}">{{title}}</a></td>
+                <td>{{author}}</td>
+                <td>{{isbn}}</td>
+                <td>{{pages}}</td>
+                <td>
+                    <a href="/books/{{id}}/edit">Edit</a>
+                    |
+                    <!--action takes you to the views file to determine where to go-->
+                    <form action="/books/{{id}}?method=DELETE" method="POST" style="display:inline"
+                                         onsubmit="return confirm('Delete this book?');">
+                        <button type="submit">Delete</button>
+                    </form>
+                    <form action="/books/blah" method="GET" style="display:inline">
+                        <button type="submit">Go Blah</button>
+                    </form>
+                </td>
+            </tr>
+        {{/each}}
+
+        </tbody>
+    </table>
+    <div style="margin-bottom: 1em;">
+        <a href="/books?sort=pages" class="btn">Sort by Pages</a>
+        <a href="/books" class="btn">Clear Sort</a>
+    </div>
+{{else}}
+    <p>No books yet.</p>
+{{/if}}

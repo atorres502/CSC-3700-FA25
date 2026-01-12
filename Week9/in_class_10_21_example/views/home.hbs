@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>My Page</title>
+    </head>
+    <body>
+        <h1>Welcome {{username}}</h1>
+        {{#if isPremium}}
+            <h2> You are a premium user</h2>
+        {{else}}
+            <h2> No premium for you</h2>
+        {{/if}}
+        <h2> Our Hobbies</h2>
+        <ol>
+            {{#each hobbies}}
+                <li>{{this}}</li>
+            {{/each}}
+        </ol>
+    </body>
+</html>

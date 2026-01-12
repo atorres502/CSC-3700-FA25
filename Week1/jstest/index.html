@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Demo JavaScript in Body</h2>
+
+<p id="demo">A Paragraph</p>
+
+<button id="buttonId" type="button" onclick="myFunction(); changeButtonText();">Try it</button>
+<br>
+<br>
+<button id="reset" type="button" onclick="location.reload()">Reload</button>
+
+<script>
+    function myFunction() {
+        document.getElementById("demo").innerHTML = Date();
+    }
+
+    function changeButtonText() {
+        document.getElementById('buttonId').innerHTML = 'Nice!';
+    }
+
+    function hover() {
+        document.getElementById("col").style.color = "red";
+    }
+    function unHover(){
+        document.getElementById("col").style.color = "black";
+    }
+</script>
+
+<p id="col" onmouseover="hover()" onmouseout="unHover()">Lorem ipsum dolor sit amet.</p>
+
+</body>

@@ -1,0 +1,15 @@
+
+<h1>Library Summary</h1>
+
+{{!-- Uses if/else: 0 is falsy, so the else will show when there are no books --}}
+{{#if total}}
+    <div class="summary-card">
+        <p><strong>Total books:</strong> {{total}}</p>
+        <p><strong>Checked out:</strong> {{checkedOutCount}}</p>
+        <p><strong>Available:</strong> {{availableCount}}</p>
+    </div>
+{{else}}
+    <p>No books in the library.</p>home
+{{/if}}
+</body>
+</html>

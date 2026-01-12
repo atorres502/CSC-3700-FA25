@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        let books = [
+            {
+                'title' : 'Educated',
+                'rating' : '5',
+                'price' : '10.99'
+            },
+            {
+                'title' : 'The Hobbit',
+                'rating' : '4.5',
+                'price' : '12.99'
+            },
+            {
+                'title' : 'I Robot',
+                'rating' : '4.0',
+                'price' : '14.99'
+            }
+        ]
+        function getBooksByRating(minRating) {
+            let retList = [];
+            books.forEach(book => {
+                if(book.rating >= minRating) {
+                    retList.push(book);
+                }
+            })
+            console.log(retList);
+            return retList;
+        }
+    </script>
+</head>
+<body>
+    <button type="button" onClick="getBooksByRating(4.5)">Click</button>
+</body>
+</html>

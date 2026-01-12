@@ -1,0 +1,44 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "title": "American Prometheus",
+      "author": "Kai Bird & Martin J. Sherwin",
+      "pages": 721,
+      "bookType": "non-fiction",
+      "year": 2005
+    },
+    {
+      "id": "2",
+      "title": "Educated",
+      "author": "Tara Westover",
+      "pages": 334,
+      "bookType": "non-fiction",
+      "year": 2018
+    },
+    {
+      "id": "4",
+      "title": "The Fellowship of the Ring",
+      "author": "J.R.R. Tolkien",
+      "pages": 423,
+      "bookType": "fiction",
+      "year": 1954
+    },
+    {
+      "id": "3b90",
+      "title": "1984",
+      "author": "George Orwell",
+      "pages": 328,
+      "bookType": "fiction",
+      "year": 1949
+    },
+    {
+      "id": "b062",
+      "title": "A Thousand Splendid Suns",
+      "author": "Khaleid Housseini",
+      "pages": 1032,
+      "bookType": "fiction",
+      "year": 2004
+    }
+  ]
+}

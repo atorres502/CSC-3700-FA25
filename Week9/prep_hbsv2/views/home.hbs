@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Library</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f7f7f7;
+        }
+        ul {
+            padding: 0;
+        }
+        li {
+            list-style: none;
+            margin: 8px 0;
+            padding: 10px;
+            border-radius: 6px;
+            background-color: white;
+        }
+        .first {
+            background-color: yellow;
+        }
+        .last {
+            background-color: pink;
+        }
+        .checkedOut {
+            color: red;
+            font-weight: bold;
+        }
+        .available {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<h1>Library Books</h1>
+<ul>
+    {{#each books}}
+        <li class="
+        {{#if @first}}first{{/if}}
+            {{#if @last}}last{{/if}}
+      ">
+            <strong>{{title}}</strong> by {{author}} —
+            {{#if checkedOut}}
+                <span class="checkedOut">Checked Out</span>
+            {{else}}
+                <span class="available">Available</span>
+            {{/if}}
+        </li>
+    {{/each}}
+</ul>
+</body>
+</html>

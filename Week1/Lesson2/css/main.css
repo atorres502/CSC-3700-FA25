@@ -1,0 +1,19 @@
+#bookstore {
+    color: red;
+}
+
+#pageTitle {
+    width: 50%;
+}
+
+.tableHeader {
+    font-weight: bold;
+}
+
+.bookTable {
+    background-color: #f0f0f0;
+    margin: 0% auto auto auto;
+}
+.interior {
+    border-top: #444444 solid 1px;
+}

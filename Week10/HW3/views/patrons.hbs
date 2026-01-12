@@ -1,0 +1,9 @@
+<h2 class="mb-3">Library Patrons</h2>
+
+<ul class="list-group">
+    {{#each patrons}}
+        <li class="list-group-item d-flex justify-content-between">
+            <a href="/patrons/{{id}}">{{name}}</a>
+        </li>
+    {{/each}}
+</ul>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100" data-bs-theme="auto">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Books 4 U </title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<style>
+    .container1 {
+        background-color: yellow;
+    }
+    .container2 {
+        background-color: palegreen;
+    }
+
+</style>
+    <script>
+        let donuts = [
+            {
+                "name": "Glazed Classic",
+                "price": 1.25,
+                "description": "A soft yeast donut with a sweet sugar glaze.",
+                "toppings": ["sugar glaze"]
+            },
+            {
+                "name": "Chocolate Frosted",
+                "price": 1.50,
+                "description": "Yeast donut topped with rich chocolate icing.",
+                "toppings": ["chocolate icing"]
+            },
+            {
+                "name": "Strawberry Sprinkles",
+                "price": 1.75,
+                "description": "Frosted with strawberry icing and rainbow sprinkles.",
+                "toppings": ["strawberry icing", "rainbow sprinkles"]
+            },
+            {
+                "name": "Boston Cream",
+                "price": 2.00,
+                "description": "Filled with vanilla custard and topped with chocolate glaze.",
+                "toppings": ["chocolate glaze", "custard filling"]
+            },
+            {
+                "name": "Jelly Filled",
+                "price": 1.85,
+                "description": "Powdered donut filled with sweet raspberry jelly.",
+                "toppings": ["powdered sugar", "raspberry jelly"]
+            },
+            {
+                "name": "Cinnamon Sugar",
+                "price": 1.40,
+                "description": "Coated with a blend of cinnamon and sugar.",
+                "toppings": ["cinnamon", "sugar"]
+            },
+            {
+                "name": "Maple Bar",
+                "price": 2.25,
+                "description": "Long bar donut topped with maple icing.",
+                "toppings": ["maple icing"]
+            },
+            {
+                "name": "Oreo Crumble",
+                "price": 2.50,
+                "description": "Vanilla-frosted donut with crushed Oreo cookies.",
+                "toppings": ["vanilla icing", "Oreo pieces"]
+            },
+            {
+                "name": "Peanut Butter Crunch",
+                "price": 2.35,
+                "description": "Chocolate donut with peanut butter glaze and crunchy topping.",
+                "toppings": ["peanut butter glaze", "crunchy peanuts"]
+            },
+            {
+                "name": "Apple Fritter",
+                "price": 2.75,
+                "description": "Crispy fried dough with apple chunks and cinnamon glaze.",
+                "toppings": ["apple filling", "cinnamon glaze"]
+            },
+            {
+                "name": "Coconut Cream",
+                "price": 2.10,
+                "description": "Cream-filled donut topped with coconut shavings.",
+                "toppings": ["coconut shavings", "vanilla cream"]
+            },
+            {
+                "name": "S’mores Delight",
+                "price": 2.80,
+                "description": "Chocolate donut with marshmallow drizzle and graham cracker crumbs.",
+                "toppings": ["marshmallow drizzle", "graham cracker crumbs", "chocolate glaze"]
+            }
+        ]
+
+        function loadDonuts() {
+            let body = document.getElementById("tableBody");
+            donuts.forEach( function( donut ) {
+                const row = document.createElement("tr");
+                row.innerHTML = `
+                    <td> ${donut.name} </td>
+                    <td> ${donut.price} </td>
+                    <td> ${donut.description}</td>
+                    <td> ${donut.toppings}</td>
+                `;
+                body.appendChild( row );
+            });
+
+        }
+    </script>
+</head>
+<body onload="loadDonuts()">
+
+
+<div class="container-fluid container2">
+    <h1>Donuts R Us</h1>
+    <p>This container spans the full width.</p>
+</div>
+<div class="container container1">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-3">Half width
+                <h1>Specials </h1>
+                <ol>
+                    <li>
+                        24 hour sale today
+                    </li>
+                    <li>
+                        50% Donuts
+                    </li>
+                </ol>
+            </div>
+            <div class="col-9">
+                <h1>Donuts For Sale</h1>
+                <div class="table-responsive">
+                <table class="table table-striped table-hover">
+                    <thead class="table-dark">
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Toppings</th>
+                    </tr>
+                    </thead>
+                    <tbody id="tableBody">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+</body>
+</html>
